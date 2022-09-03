@@ -9,3 +9,16 @@
 body {
   background-color: #ccc;
 }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  flex-direction: column;
+}
+.header h1 {
+  text-align: center;
+}
+.box {
+  margin: 35px;
+}
