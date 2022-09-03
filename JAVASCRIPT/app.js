@@ -24,5 +24,15 @@ const ticTacToe = (element, index) => {
     let a = cells[currentCondition[0]];
     let b = cells[currentCondition[1]];
     let c = cells[currentCondition[3]];
+    //if the all the btns are empty and are not equal continue the game
+    if (a == "" || b == "" || c == "") {
+      continue;
+    }
+    //if the btn are output the same value as the current condition Tell the player you won
+    if (a == b && b == c) {
+      result.innerHTML = `Player ${a} won, congratulations`;
+      btns.forEach((btn) => (btn.disabled = true));
+    }
   }
 };
+//
