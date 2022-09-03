@@ -37,3 +37,26 @@ body {
   cursor: pointer;
   background-color: rgb(240, 240, 240);
 }
+.btn:disabled {
+  color: #000;
+  cursor: no-drop;
+}
+.result,
+.reset {
+  text-align: center;
+  font-size: 25px;
+}
+#reset {
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 35px;
+  transition: all 0.5s ease-in-out;
+}
+#reset:hover {
+  color: #ccc;
+  background-color: #000;
+}
