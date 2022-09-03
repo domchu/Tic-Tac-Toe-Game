@@ -22,3 +22,14 @@ body {
 .box {
   margin: 35px;
 }
+
+.btn {
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 75px;
+  margin: 2px;
+  width: 75px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
