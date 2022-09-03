@@ -1,7 +1,7 @@
 let cells = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 let result = document.querySelector(".result");
-let btns = document.querySelectorAll(".btns");
+let btns = document.querySelectorAll(".btn");
 let conditions = [
   [0, 1, 2],
   [3, 4, 5],
@@ -12,6 +12,7 @@ let conditions = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+// console.log("is working");
 const ticTacToe = (element, index) => {
   element.value = currentPlayer;
   element.disabled = true;
@@ -46,3 +47,9 @@ function reset() {
   result.innerHTML = `Player X Turn`;
   btns.forEach((btn) => (btn.disabled = false));
 }
+//added the click handler to the reset button
+document.querySelector("#reset").addEventListener("click", reset);
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => ticTacToe(btn, i));
+});
