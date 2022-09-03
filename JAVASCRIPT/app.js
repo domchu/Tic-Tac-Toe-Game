@@ -24,7 +24,7 @@ const ticTacToe = (element, index) => {
     let currentCondition = conditions[i];
     let a = cells[currentCondition[0]];
     let b = cells[currentCondition[1]];
-    let c = cells[currentCondition[3]];
+    let c = cells[currentCondition[2]];
     //if the all the btns are empty and are not equal continue the game
     if (a == "" || b == "" || c == "") {
       continue;
