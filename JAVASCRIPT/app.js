@@ -18,4 +18,11 @@ const ticTacToe = (element, index) => {
   cells[index] = currentPlayer;
   currentPlayer = currentPlayer == "X" ? "0" : "X";
   result.innerHTML = `Player ${currentPlayer} Turn`;
+
+  for (let i = 0; i < conditions.length; i++) {
+    let currentCondition = conditions[i];
+    let a = cells[currentCondition[0]];
+    let b = cells[currentCondition[1]];
+    let c = cells[currentCondition[3]];
+  }
 };
