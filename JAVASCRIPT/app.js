@@ -35,4 +35,14 @@ const ticTacToe = (element, index) => {
     }
   }
 };
-//
+//clearing all the states
+function reset() {
+  let cells = ["", "", "", "", "", "", "", "", ""];
+  btns.forEach((btn) => {
+    btn.value = "";
+  });
+  //since the states is clear the next player should start playing
+  currentPlayer = "X";
+  result.innerHTML = `Player X Turn`;
+  btns.forEach((btn) => (btn.disabled = false));
+}
